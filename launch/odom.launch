@@ -1,0 +1,14 @@
+<launch>
+
+    <node name="rosserial_server" pkg="rosserial_server" type="socket_node" output="screen"/>
+
+
+    <node name="odometry_publisher" pkg="bob_odom" type="encoder2odom.py" output="screen"/>
+
+
+    <!-- <node name="distanceSensorNode" pkg="bob_odom" type="distanceSensor.py" output="screen"/> -->
+
+    <node name='rviz' pkg= 'rviz' type='rviz'/>
+
+
+</launch>   
